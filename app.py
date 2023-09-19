@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 #setting up a path
 @app.route('/api', methods=['GET'])
+
 #defining a function used to get info
 def get_info():
     slack_name = request.args.get('slack_name')#this code tells the computer to look for 'slack_name' to be used later
